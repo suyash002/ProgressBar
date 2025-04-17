@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import './style.css'
-import ProgressBar from './components/progressbar'
+import ProgressBarCustom from './components/ProgressBarCustom';
 
 function App() {
   const [value, setValue] = useState(0);
@@ -27,7 +27,7 @@ function App() {
     <>
      <div className='app'>
       <span>Progress Bar</span>
-      <ProgressBar value={value} />
+      <ProgressBarCustom value={value} />
       <span>{success ? "Complete!" : "Loading..."}</span>
      </div>
     </>

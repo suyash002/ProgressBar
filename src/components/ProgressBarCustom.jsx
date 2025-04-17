@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {MAX, MIN} from "../constants";
 
-const ProgressBar = ({ value = 0, }) => {
+const ProgressBarCustom = ({ value = 0, }) => {
 
 const [percent, setPercent] = useState(value);
 
@@ -25,4 +25,4 @@ useEffect(() => {
   )
 }
 
-export default ProgressBar
+export default ProgressBarCustom
