@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    padding: 20px;
+  }
+  
+
+  .progress {
+    height: 20px;
+    width: 100%;
+    max-width: 500px; 
+    background-color: rgb(223, 226, 229);
+    border: 1px solid black;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .progress span {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-size: 0.9rem;
+  }
+  
+  .progress div {
+    height: 100%;
+    background-color: #00c251;
+    transition: transform 0.1s linear;
+  }
+
+  /* Responsive Progress Bar */
+@media (max-width: 768px) {
+    .progress {
+      height: 18px;
+      max-width: 90%;
+    }
+  
+    .progress span {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .progress {
+      height: 16px;
+      max-width: 95%;
+    }
+  
+    .progress span {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .progress {
+      height: 14px;
+    }
+  
+    .progress span {
+      font-size: 0.7rem;
+    }
+  }
